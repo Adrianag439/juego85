@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="controlador.IngresoController"
+            prefHeight="400.0"
+            prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);">
+
+    <children>
+
+        <Label layoutX="150" layoutY="40"
+               text="🎮 GUESS MY RULE"
+               style="-fx-text-fill: #00e5ff;
+                      -fx-font-size: 28px;
+                      -fx-font-weight: bold;"/>
+
+        <Label layoutX="170" layoutY="90"
+               text="Ingresa tu apodo"
+               style="-fx-text-fill: white;
+                      -fx-font-size: 14px;"/>
+
+        <TextField fx:id="txtApodo"
+                   layoutX="160"
+                   layoutY="140"
+                   prefWidth="280"
+                   prefHeight="40"
+                   promptText="Tu apodo..."
+                   style="-fx-background-color: #1e1e2f;
+                          -fx-text-fill: white;
+                          -fx-border-color: #00e5ff;
+                          -fx-border-radius: 10;
+                          -fx-background-radius: 10;" />
+
+        <Label fx:id="lblMensaje"
+               layoutX="170"
+               layoutY="190"
+               style="-fx-text-fill: #ff5252;
+                      -fx-font-size: 13px;" />
+
+        <Button text="INGRESAR"
+                onAction="#handleRegistrar"
+                layoutX="220"
+                layoutY="250"
+                prefWidth="160"
+                prefHeight="40"
+                style="-fx-background-color: #00e5ff;
+                       -fx-text-fill: black;
+                       -fx-font-weight: bold;
+                       -fx-background-radius: 10;" />
+
+    </children>
+</AnchorPane>
