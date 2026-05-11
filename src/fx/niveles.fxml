@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0"
+            prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controlador.InicController"
+            style="-fx-background-color: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);">
+
+    <children>
+
+        <Label layoutX="170"
+               layoutY="40"
+               text="🎮 GUESS MY RULE"
+               style="-fx-text-fill: #00e5ff;
+                      -fx-font-size: 28px;
+                      -fx-font-weight: bold;"/>
+
+        <Label layoutX="205"
+               layoutY="90"
+               text="SELECCIONA UN NIVEL"
+               style="-fx-text-fill: white;
+                      -fx-font-size: 14px;"/>
+
+        <VBox layoutX="200"
+              layoutY="140"
+              spacing="25">
+
+            <Button fx:id="btnfacil"
+                    text="MODO FÁCIL"
+                    onAction="#hadlebutton"
+                    prefWidth="200"
+                    prefHeight="45"
+                    style="-fx-background-color: #00e5ff;
+                           -fx-text-fill: black;
+                           -fx-font-size: 15px;
+                           -fx-font-weight: bold;
+                           -fx-background-radius: 10;"/>
+
+            <Button fx:id="btndificil"
+                    text="MODO DIFÍCIL"
+                    onAction="#hadledificl"
+                    prefWidth="200"
+                    prefHeight="45"
+                    style="-fx-background-color: #ff1744;
+                           -fx-text-fill: white;
+                           -fx-font-size: 15px;
+                           -fx-font-weight: bold;
+                           -fx-background-radius: 10;"/>
+
+        </VBox>
+
+    </children>
+</AnchorPane>
